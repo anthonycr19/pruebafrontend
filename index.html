@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ordenador de serie</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Desafío frontend">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="Juan Cahuana &lt;jcahuanam@gmail.com&gt;">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Google Tag Manager-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-FVT3SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-FVT3SB');
+    </script>
+    <!-- End Google Tag Manager-->
+    <div class="Mensaje">
+      <div class="Mensaje-overlay"></div>
+      <div class="Mensaje-content"><span class="icon_wrapper">
+          <i class="icon alert fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <i class="icon success fa fa-smile-o" aria-hidden="true"></i></span><span class="text">Mensaje por defecto</span></div>
+    </div>
+    <div class="MainWrapper">
+      <header class="Header">
+        <div class="Header-content">
+          <h1 class="Header-title">Ordenador de serie</h1>
+        </div>
+      </header>
+      <section class="Content">
+        <div class="IngresoNumeros">
+          <div class="IngresoNumeros-description">Ingresa cualquier número.</div>
+          <form action="" method="post" class="IngresoNumeros-form">
+            <input type="text" name="ipt_numero" placeholder="" maxlength="3" class="ipt_numero">
+            <button type="submit" class="btn_ingresar"><i class="icon fa fa-plus" aria-hidden="true"></i></button>
+          </form>
+        </div>
+        <div class="Canvas">
+          <div class="Canvas-brain">
+            <div class="image"></div>
+          </div>
+          <div class="Canvas-aleatorios"></div>
+          <div class="Canvas-controls">
+            <button class="btn_ordenar"><i class="icon fa fa-sort-numeric-asc" aria-hidden="true"></i> Ordenar</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/jquery.validate.min.js"></script>
+  <script src="js/vendor/jquery.numeric.min.js"></script>
+  <script src="js/mensaje.js"></script>
+  <script src="js/ordenar-numeros.js"></script>
+  <script src="js/app.js"></script>
+</html>
